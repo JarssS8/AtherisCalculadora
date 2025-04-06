@@ -127,7 +127,12 @@ function calcularMateriales() {
                 }
                 if (materiales[arma].muelle || 0 > 0) {
                     totalMuelles += cantidad;
-
+                }
+                if (materiales[arma].aceiteArmas || 0 > 0){
+                    totalAceiteParaArmas += cantidad;
+                }
+                if (materiales[arma].cuerpoPistola || 0 > 0){
+                    totalCuerpoDePistola += cantidad;
                 }
 
             }
