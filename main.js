@@ -66,6 +66,10 @@ function calcularMateriales() {
         "HeavyRifle": { beneficio: 60000, aceiteArmas: 7, acero: 490, cuerpoRifle: 6, hierro: 274, muelle: 10, tuberias: 9 },
         "TacticalRifle": { beneficio: 60000, aceiteArmas: 9, acero: 458, cuerpoRifle: 6, hierro: 237, muelle: 7, tuberias: 6 },
         "MilitaryRifle": { beneficio: 60000, aceiteArmas: 10, acero: 546, cuerpoRifle: 6, hierro: 327, muelle: 13, tuberias: 12 },
+        "CarabinaEspecial": {beneficio: 60000, aceiteArmas: 8, aluminio: 157, cuerpoRifle: 5, hierro: 311, muelle: 9, tuberias: 7},
+        "CarabinaEspecialMKII": {beneficio: 60000, aceiteArmas: 7, aluminio: 223, cuerpoRifle: 6, hierro: 437, muelle: 5, tuberias: 5},
+        "PistolaGancho": {beneficio: 100000, aceiteArmas: 6, aluminio: 314, cuerpoRifle: 5, hierro: 558, goma: 370},
+
         "SilenciadorPistola": { precio: 5000 },
         "CargadorAmpliadoPistola": { precio: 8000 },
         "Cargador": { precio: 500 },
@@ -133,6 +137,9 @@ function calcularMateriales() {
                 }
                 if (materiales[arma].cuerpoPistola || 0 > 0){
                     totalCuerpoDePistola += cantidad;
+                }
+                if (materiales[arma].cuerpoRifle || 0 > 0){
+                    totalCuerpoDeRifle += cantidad;
                 }
 
             }
